@@ -10,61 +10,82 @@
   <body>
     <div class="container">
       <h1>Purchase Form</h1>
-      <form>
+        <div id="blanks">
+        <form>
 
-        <h2>Personal info</h2>
+          <h2>Personal info</h2>
 
-        <div class="form-group">
-          <label for="firstname">First Name</label>
-          <input id="firstname" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="lastname">Last Name</label>
-          <input id="lastname" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="address">Street Address</label>
-          <input id="address" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <input id="city" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="state">State</label>
-          <input id="state" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="zip">Zip Code</label>
-          <input id="zip" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input id="email" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input id="phone" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input id="firstname" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Street Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" class="form-control" type="text">
+          </div>
 
-        <h2>Payment info</h2>
+          <h2>Payment info</h2>
 
-        <div class="form-group">
-          <label for="card">Credit Card Number</label>
-          <input id="card" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="ccv">CCV</label>
-          <input id="ccv" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="expiration">Expiration Date (MM-DD-YYYY)</label>
-          <input id="expiration" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="card">Credit Card Number</label>
+            <input id="card" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="ccv">CCV</label>
+            <input id="ccv" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="expiration">Expiration Date (MM-DD-YYYY)</label>
+            <input id="expiration" class="form-control" type="text">
+          </div>
 
-        <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn">Submit</button>
 
-      </form>
+        </form>
+      </div>
+
+      <div id="receipt">
+        <h1>Your Receipt</h1>
+        <p>Thank you, <span class="firstname"></span> <span class="lastname"></span> for your purchase of our product! It will be shipped to:
+
+          <br>
+          <span class="firstname"></span> <span class="lastname"></span>
+          <br>
+          <span class="address"></span>
+          <br>
+          <span class="city"></span> <span class="state"></span>, <span class="zip"></span>
+          <br>
+          <br>
+          <span class="email"></span>
+          <br>
+          <span class="phone"></span>
+
+        </p>
+      </div>
     </div>
   </body>
 </html>
