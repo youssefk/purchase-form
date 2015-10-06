@@ -24,8 +24,12 @@
             <input id="lastname" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="address">Street Address</label>
+            <label for="address">Street Address Line 1</label>
             <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address2">Street Address Line 2</label>
+            <input id="address2" class="form-control" type="text">
           </div>
           <div class="form-group">
             <label for="city">City</label>
@@ -70,12 +74,17 @@
 
       <div id="receipt">
         <h1>Your Receipt</h1>
-        <p>Thank you, <span class="firstname"></span> <span class="lastname"></span> for your purchase of our product! It will be shipped to:
-
+        <p>
+          Thank you, <span class="firstname"></span> <span class="lastname"></span> for your purchase of our product!
+          <br>
+          It will be shipped to:
+          <br>
           <br>
           <span class="firstname"></span> <span class="lastname"></span>
           <br>
           <span class="address"></span>
+          <br>
+          <span class="address2"></span>
           <br>
           <span class="city"></span> <span class="state"></span>, <span class="zip"></span>
           <br>
@@ -83,7 +92,9 @@
           <span class="email"></span>
           <br>
           <span class="phone"></span>
-
+          <br>
+          <br>
+          If the above information is incorrect, please contact support ASAP.
         </p>
       </div>
     </div>
